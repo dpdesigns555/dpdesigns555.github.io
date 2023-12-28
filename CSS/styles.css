@@ -8,16 +8,21 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     
     color: white;
 }
 
 body {
-    background-color: rgb(3, 11, 58);
+    background-color: rgb(6, 23, 122);
     color: white;
    
 }
+
 
 .navbar {
     position: fixed;
@@ -27,8 +32,8 @@ body {
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    border-bottom: 2px solid rgb(43, 12, 196);
-    background-color: rgba(0, 0, 0, 0.212);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 30px;
     transition: all 0.5s ease;
 }
@@ -36,6 +41,7 @@ body {
 
 .navbar.active {
     background-color: #000000;
+    text-shadow:  2px 2px 10px rgb(145, 49, 49);
     padding: 20px;
 }
 
@@ -59,7 +65,7 @@ body {
     left: 0;
     height: 2px;
     width: 100%;
-    background-color: rgb(43, 12, 196);
+    background-color: rgb(255, 255, 255);
     transform-origin: right;
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
@@ -95,6 +101,7 @@ body {
     margin-bottom: 20px;
     margin-top: 140px;
     margin-left: 60px;
+    border-bottom: 1px solid white;
 }
 
 
@@ -113,8 +120,18 @@ body {
 .img-diego {
     width: 30%;
     margin: 0;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-left: 65px;
+    border-radius: 1em 1em;
+    border-right: solid 1px rgb(255, 255, 255);
+    background-color: #bdbdbd38;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.img-diego img {
+    border-radius: 100px;
+    height: 500px;
 }
 
 main {
@@ -130,6 +147,7 @@ main {
    max-width: 1300px;
    margin-top: 30px;
    margin-top: 100px !important;
+   scroll-margin-top: 45px;
 }
 
 .personal-skills {
@@ -143,13 +161,21 @@ main {
 
 .personal-skills h1 {
     font-size: 50px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
 .personal-skills p {
-    font-size: 20px;
+    font-size: 35px;
     padding: 10px;
+    padding-bottom: 30px !important;
     font-weight: bold;
+    
+}
+
+.personal-skills img {
+    margin-top: 250px;
+    
 }
 
 .skills-programs {
@@ -218,6 +244,10 @@ body::-webkit-scrollbar-thumb {
     margin: 0 auto;
     max-width: 1200px;
     background-color: #0000003b;
+    border: solid 1px white;
     
-    
+}
+
+footer {
+    padding: 40px;
 }

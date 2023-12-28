@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DP Diseños</title>
 
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/skills.css">
 </head>
@@ -18,7 +20,7 @@
             <div class="enlaces">
                 <a href="#">Inicio</a>
                 <a href="#aboutMe">Sobre mi</a>
-                <a href="#">Contacto</a>
+                <a href="#" style="opacity: .5;">Contacto</a>
             </div>
         </nav>
     </header>
@@ -27,7 +29,8 @@
     
         <div class="content">
       
-            <div class="img-diego">
+            <div class="img-diego" data-aos="flip-left"  data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000" data-aos-delay="200">
                 <img src="SOURCES/RECURSO-1.png" alt="">
             </div>
 
@@ -63,7 +66,8 @@
             </p>
             <br>
             <br>
-            <p class="p-23"><b class="border-blue-t">Educación:</b> Universidad Arturo Michelena.</p>
+            <div class="ft"> <p class="p-23"><b class="border-blue-t">Educación:</b> Universidad Arturo Michelena.</p></div>
+           
 
             <div class="skills-ve">
 
@@ -103,14 +107,21 @@
 
     <footer>
         <div class="footer">
-            <p class="by">By ZAFInteractive</p>
+            <p class="by"></p>
             <br>
             <br>
             <p>DP Diseños ©</p>
         </div>
     </footer>
 
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="JS/menu.js"></script>
     <script src="JS/skills.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

@@ -18,22 +18,24 @@ a {
 }
 
 body {
-    background-color: rgb(6, 23, 122);
+    background-color: rgb(4, 17, 95);
     color: white;
-   
+    
 }
 
 
 .navbar {
     position: fixed;
     width: 100%;
+    height: auto;
     display: flex;
     top: 0px;
     align-items: center;
     text-align: center;
     justify-content: space-between;
+    box-sizing: border-box;
     border-bottom: 2px solid rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.26);
     padding: 30px;
     transition: all 0.5s ease;
 }
@@ -42,7 +44,7 @@ body {
 .navbar.active {
     background-color: #000000;
     text-shadow:  2px 2px 10px rgb(145, 49, 49);
-    padding: 20px;
+    padding: 25px;
 }
 
 .enlaces {
@@ -80,7 +82,7 @@ body {
     margin-top: 10px;
     display: flex;
     width: 100%;
-
+    
 }
 
 .text-var {
@@ -90,10 +92,13 @@ body {
     margin-left: -30px;
     background-color: rgba(0, 0, 0, 0);
     margin-bottom: 50px !important;
+    z-index:-1;
+   
 }
 
 .text-var h1 {
-    font-size: 88px;
+    font-size: 40
+88px;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
@@ -128,11 +133,15 @@ body {
     background-color: #bdbdbd38;
     padding: 10px;
     padding-bottom: 15px;
+    z-index:-1;
+    
 }
 
 .img-diego img {
     border-radius: 100px;
     height: 500px;
+    z-index:-1;
+
 }
 
 main {
@@ -141,6 +150,7 @@ main {
     background-position-x: 300px;
     background-position-y: -89px;   
     background-size: 80% 110%;
+    
 } 
 
 .info {
@@ -149,6 +159,7 @@ main {
    margin-top: 30px;
    margin-top: 100px !important;
    scroll-margin-top: 45px;
+   
 }
 
 .personal-skills {
@@ -158,12 +169,15 @@ main {
     padding: 20px;
     margin-left: 100px;
     
+    
 }
 
 .personal-skills h1 {
     font-size: 50px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    z-index:-1;
+
 }
 
 .personal-skills p {
@@ -171,11 +185,15 @@ main {
     padding: 10px;
     padding-bottom: 30px !important;
     font-weight: bold;
+    z-index:-1;
+
     
 }
 
 .personal-skills img {
     margin-top: 250px;
+    z-index:-1;
+
     
 }
 
@@ -184,12 +202,16 @@ main {
     margin: 10px;
     margin-left: 100px;
     
+
+    
 }
 .skills-programs h1 {
     margin-top: 30px;
     font-size: 42px;
-    opacity: 0.9;
+    opacity: 1;
     text-align: center;
+    z-index:-1;
+
 }
 
 .text-center{
@@ -197,6 +219,8 @@ main {
     font-size: 25px;
     margin-left: 20px;
     margin-right: 20px;
+    z-index:-1;
+
 }
 
 .p-23 {
@@ -215,17 +239,24 @@ main {
     margin: 20px;
     justify-content: center;
     padding: 10px;
+    z-index:-1;
+
   
 }
 
 .skills-ve h1 {
     font-size: 35px;
     margin-top: 10px;
+    z-index:-1;
+
+
 }
 
 .skills-ve p {
     margin-top: 10px;
     margin-bottom: 10px;
+    z-index:-1;
+
 }
 
 body::-webkit-scrollbar {
@@ -246,6 +277,8 @@ body::-webkit-scrollbar-thumb {
     max-width: 1200px;
     background-color: #0000003b;
     border: solid 1px white;
+    z-index:-1;
+
     
 }
 
@@ -256,4 +289,262 @@ body::-webkit-scrollbar-thumb {
     font-size: 15px;
     text-align: center;
     background-color: #00000096;
+    z-index:-1;
+
+}
+
+
+
+@media (max-width: 1200px) {
+    .enlaces {
+        margin-left: 750px;
+    }
+
+    .text-var h1 {
+        font-size: 75px;
+        margin-left: 50px;
+    }
+
+    .img-diego {
+        margin-left: 100px;
+        margin-right: 120px;
+    }
+
+    .info {
+        max-width: 1000px;
+        border-radius: 25px;
+    }
+
+    .ft p {
+        font-size: 20px !important;
+        margin-left: 0px;
+    }
+
+    .personal-skills {
+        height: 50%;
+        margin-left: 0;
+        display: none;
+    }
+
+   .personal-skills h1{
+    font-size: 34px;
+   }
+
+   .personal-skills p {
+    font-size: 25px;
+   }
+
+   .skills-programs h1 {
+    font-size: 34px;
+    border: 0px !important;
+   }
+
+   .skills-programs p {
+    font-size: 25px;
+   }
+
+   .personal-skills img {
+    margin-top: 26.9em;
+    margin-right: 10px;
+   }
+
+   .skills-programs {
+    width: 100%;
+    margin-left: 0;
+   }
+
+   .skills-ve {
+    width: 100%;
+    margin-left: 10px;
+   }
+
+
+}
+
+@media (max-width: 1156px) {
+
+    .enlaces {
+        margin-left: 700px;
+    }
+
+    .text-var h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 1107px) {
+    .enlaces {
+        margin-left: 0px;
+        text-align: left;
+        padding-inline: 50px;
+        font-size: 25px;
+    }
+
+    .text-var {
+        margin-left: 1px;
+    }
+    .text-var h1{
+        font-size: 60px;
+        padding-inline: 10px;
+        text-align: center;
+    }
+
+    .text-var h2 {
+        font-size: 20px;
+    }
+
+    .img-diego {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1107px) {
+    .info {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 968px) {
+    .text-var h1 {
+        font-size: 50px;
+    }
+
+    .text-var h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 945px) {
+
+    .enlaces {
+        margin-left: 200px;
+        
+    }
+    .content{
+        flex-direction: column;
+    }
+    .img-diego {
+        width: 50%;
+        height: 50%;
+        padding: 20px;
+        background-color: rgba(224, 255, 255, 0.151);
+        border: 1px solid white;
+        margin-left: 0px;
+        margin-bottom: 0;
+      
+        align-self: center;
+    }
+    .img-diego img {
+        width: 100%;
+        height: 85%;
+       
+        margin-bottom: 0;
+        border-radius: 20%;
+    }
+
+    .text-var {
+        text-align: center;
+        align-self: center;
+        margin-top: 0;
+        margin-left: 40px;
+    }
+
+    .text-var h1 {
+        margin: 10px;
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .info {
+        width: 700px;
+    }
+    .skills-programs {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 880px) {
+    .enlaces {
+        margin-left: 180px;
+        
+    }
+}
+
+@media (max-width: 794px) {
+    .enlaces {
+        margin-left: 120px;
+        
+    }
+}
+
+@media (max-width: 722px) {
+    .enlaces {
+        margin-left: 100px;
+        
+    }
+
+    .info {
+        width: 500px;
+    }
+}
+
+@media (max-width: 629px) {
+    .enlaces {
+        margin-left: 50px;
+        
+    }
+}
+
+@media (max-width: 574px) {
+
+    .nav {
+         flex-direction: column;
+    }
+    .enlaces {
+        margin-left: 0;
+        
+       
+    }
+}
+@media (max-width: 517px) {
+    
+    .text-var h2 {
+        font-size: 18px;
+    }
+
+    .info {
+        width: 400px;
+    }
+
+    .skills-programs h1 {
+        font-size: 25px;
+    }
+
+    .skills-programs p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 512px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar.active {
+        padding: 5px;
+    }
+
+    .text-var h1 {
+        font-size: 30px;
+    }
+
+    .img-diego {
+        margin-top: 130px;
+    }
+}
+
+@media (max-width: 454px) {
+
+  
 }

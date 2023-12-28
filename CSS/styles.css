@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    
+    color: white;
+}
+
+body {
+    background-color: rgb(3, 11, 58);
+    color: white;
+   
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(43, 12, 196);
+    background-color: rgba(0, 0, 0, 0.212);
+    padding: 30px;
+    transition: all 0.5s ease;
+}
+
+
+.navbar.active {
+    background-color: #000000;
+    padding: 20px;
+}
+
+.enlaces {
+    margin-left: 800px;
+}
+
+.enlaces a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 2px;
+    position: relative;
+}
+
+.enlaces a:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(43, 12, 196);
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.enlaces a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.content {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+
+}
+
+.text-var {
+    max-width: 1200px;
+    margin: 85px;
+    width: 50%;
+    margin-left: -30px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 50px !important;
+}
+
+.text-var h1 {
+    font-size: 88px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    word-spacing: 7px;
+    margin-bottom: 20px;
+    margin-top: 140px;
+    margin-left: 60px;
+}
+
+
+.text-var h2 {
+    font-size: 25px;
+    opacity: .8;
+    font-weight: 400;
+  
+    text-align: center;
+}
+.text-var h4 {
+    font-size: 40px;
+    margin-left: -30px;
+    margin-top: 20px;
+}
+.img-diego {
+    width: 30%;
+    margin: 0;
+    margin-top: 80px;
+    margin-left: 65px;
+}
+
+main {
+    background-image: url(../SOURCES/bg.png);
+    background-repeat: no-repeat;
+    background-position-x: 300px;
+    background-position-y: -89px;   
+    background-size: 80% 110%;
+} 
+
+.info {
+   display: flex;
+   max-width: 1300px;
+   margin-top: 30px;
+   margin-top: 100px !important;
+}
+
+.personal-skills {
+    width: 40%;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    margin-left: 100px;
+    
+}
+
+.personal-skills h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.personal-skills p {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.skills-programs {
+    width: 100%;
+    margin: 10px;
+    margin-left: 100px;
+    
+}
+.skills-programs h1 {
+    margin-top: 30px;
+    font-size: 42px;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.text-center{
+    text-align: left;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.p-23 {
+    margin-left: 20px;
+    text-align: right;
+    font-size: 25px;
+    margin-bottom: 45px;
+}
+
+.border-blue-t {
+    border-bottom: solid 2px rgb(43, 12, 196);
+    margin-bottom: 0;
+}
+
+.skills-ve {
+    margin: 20px;
+    justify-content: center;
+    padding: 10px;
+  
+}
+
+.skills-ve h1 {
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.skills-ve p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgb(0, 0, 0);
+ 
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    border-radius: 25px;   
+    transition: all 0.4s;
+    border: solid 1px rgb(43, 12, 196);
+}
+
+.info {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #0000003b;
+    
+    
+}

@@ -47,11 +47,12 @@ body {
     padding: 25px;
 }
 
-.enlaces {
+.nav-list {
     margin-left: 800px;
+    display: flex;
 }
 
-.enlaces a {
+.nav-list a {
     text-decoration: none;
     font-size: 20px;
     padding: 20px;
@@ -59,7 +60,7 @@ body {
     position: relative;
 }
 
-.enlaces a:after {
+.nav-list a:after {
     content: "";
     position: absolute;
     right: 0;
@@ -73,7 +74,7 @@ body {
     transition: transform 0.2s ease-in-out;
 }
 
-.enlaces a:hover:after {
+.nav-list a:hover:after {
     transform-origin: left;
     transform: scaleX(1);
 }
@@ -97,8 +98,7 @@ body {
 }
 
 .text-var h1 {
-    font-size: 40
-88px;
+    font-size: 88px;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
@@ -200,7 +200,7 @@ main {
 .skills-programs {
     width: 100%;
     margin: 10px;
-    margin-left: 100px;
+    margin-left: 10px;
     
 
     
@@ -363,7 +363,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 1156px) {
 
-    .enlaces {
+    .nav-list {
         margin-left: 700px;
     }
 
@@ -373,7 +373,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 1107px) {
-    .enlaces {
+    .nav-list {
         margin-left: 0px;
         text-align: left;
         padding-inline: 50px;
@@ -417,7 +417,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 945px) {
 
-    .enlaces {
+    .nav-list {
         margin-left: 200px;
         
     }
@@ -465,21 +465,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 880px) {
-    .enlaces {
+    .nav-list {
         margin-left: 180px;
         
     }
 }
 
 @media (max-width: 794px) {
-    .enlaces {
+    .nav-list {
         margin-left: 120px;
         
     }
 }
 
 @media (max-width: 722px) {
-    .enlaces {
+    .nav-list {
         margin-left: 100px;
         
     }
@@ -490,7 +490,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 629px) {
-    .enlaces {
+    .nav-list {
         margin-left: 50px;
         
     }
@@ -501,7 +501,7 @@ body::-webkit-scrollbar-thumb {
     .nav {
          flex-direction: column;
     }
-    .enlaces {
+    .nav-list {
         margin-left: 0;
         
        
@@ -544,7 +544,50 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media (max-width: 454px) {
+@media (max-width: 466px) {
+    .navbar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding:5px; 
+       
+    }
 
-  
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+       ;
+    }
+
+    .img-diego {
+        margin-top: 750px;
+    }
+}
+
+@media (max-width: 405px) {
+
+    .info {
+        width: 380px;
+    }
+
+    .text-var h2 {
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+    .text-var h1 {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+        
+    }
+
+    .text-var {
+        margin-left: 30px;
+    }
+    .content {
+        margin-left: 10px;
+    }
 }

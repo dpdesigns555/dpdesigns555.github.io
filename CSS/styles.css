@@ -591,3 +591,11 @@ body::-webkit-scrollbar-thumb {
         margin-left: 10px;
     }
 }
+
+
+@media (max-width: 405px) {
+
+    .info {
+        width: 300px;
+    }
+}

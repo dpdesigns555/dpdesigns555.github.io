@@ -2,12 +2,13 @@
     width: 100%;
     background-color: #f0f0f0;
     border-radius: 25px;
-   
+
 }
 
 .skills {
+    text-transform: uppercase;
     text-align: right;
-    padding: 5px;
+    padding: 3px;
     color: rgb(0, 0, 0);
     font-weight: bold;
     border-radius: 25px; 
@@ -15,7 +16,7 @@
 }
 
 .illustrator {
-    background-color: orangered;
+    background: rgb(43, 12, 196);
     border: solid 2px rgb(0, 0, 0);
 }
 
@@ -25,7 +26,7 @@
 
 
 .photoshop {
-    background-color: rgb(38, 79, 156);
+    background: rgb(43, 12, 196);
     border: solid 2px rgb(0, 0, 0);
 }
 
@@ -34,7 +35,7 @@
 }
 
 .after-effects {
-    background-color: rgb(103, 38, 156);
+    background: rgb(43, 12, 196);
     border: solid 2px rgb(0, 0, 0);
 }
 
@@ -43,7 +44,7 @@
 }
 
 .adobe-indesign{
-    background-color: rgb(156, 38, 87);
+    background: rgb(43, 12, 196);
     border: solid 2px rgb(0, 0, 0);
 }
 
@@ -52,7 +53,7 @@
 }
 
 .picsart {
-    background: linear-gradient(90deg, rgba(190,0,189,1) 17%, rgba(107,17,190,1) 36%, rgba(101,37,210,1) 45%, rgba(74,27,219,1) 58%, rgba(78,28,218,1) 58%, rgba(49,20,231,1) 61%, rgba(22,140,233,1) 65%, rgba(0,232,255,1) 82%);
+    background: rgb(43, 12, 196);
     border: solid 2px rgb(0, 0, 0);
 }
 

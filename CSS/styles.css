@@ -20,7 +20,9 @@ a {
 body {
     background-color: rgb(32, 24, 24);
     color: white;
-    
+    background-image: url(../SOURCES/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
@@ -35,14 +37,15 @@ body {
     justify-content: space-between;
     box-sizing: border-box;
     border-bottom: 2px solid rgb(43, 12, 196);
-    background-color: rgba(0, 0, 0, 0.26);
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.411);
+    backdrop-filter: blur(10px);
+    padding: 16px;
     transition: all 0.5s ease;
 }
 
 
 .navbar.active {
-    background-color: #000000;
+    background-color: rgba(43, 43, 43, 0.507);
     padding: 15px;
 }
 
@@ -86,12 +89,9 @@ body {
 }
 
 .text-var {
-    max-width: 1200px;
-    margin: 85px;
-    width: 50%;
-    margin-left: -30px;
+    margin: 100px;
     background-color: rgba(0, 0, 0, 0);
-    margin-bottom: 50px !important;
+    margin-bottom: 100px !important;
     z-index:-1;
    
 }
@@ -198,8 +198,7 @@ main {
     margin: 10px;
     margin-left: 10px;
     z-index: -1;
-
-    
+    margin-top: 50px;    
 }
 .skills-programs h1 {
     margin-top: 30px;
